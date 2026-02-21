@@ -1,0 +1,821 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, * :before, *:after {
+    box-sizing: interfaz;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* FUENTES */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* GLOBALES */
+h1, h2, h3 {
+    font-family: 'Merriweather',
+    serif;
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+/* -------------------------------------------------- */
+/* ENCABEZADO */
+header {
+    background-image: url(../img/becas3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 7rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+header p {
+    font-size: 2rem;
+    color:#a9d9f5;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+/* -------------------------------------------------- */
+/* CABECERAS Y NAVEGACIÓN */
+.contenedor-navegacion a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor-navegacion {
+    border-top: 0.1rem solid #e1e1e1;
+    border-bottom: 0.1rem solid #e1e1e1;
+    border-width: 0.1rem;
+    background-color: #1a237e;
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* hace más grande el área clickeable */
+
+.navegacion-principal a {
+    padding: 1.5rem 2rem; /* hace más grande el área clickeable */
+}
+
+.contenedor-navegacion a:hover {
+    cursor: pointer;
+    background-color: rgb(212, 212, 218);
+    color: black;
+}
+
+/* -------------------------------------------------- */
+/* FOOTER */
+.site-footer {
+    border-top: 0.1rem solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    background-color: rgb(45, 51, 76);
+    
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
+
+.grid-footer h3 {
+    color: rgb(238, 238, 238);
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.footer-menu a {
+    display: block;
+    color:#aaaaaa;
+    text-decoration: none;
+}
+
+.footer-menu a:hover{
+    cursor: pointer;
+    color: #3288c6;
+}
+
+.footer-menu p {
+    display: block;
+    color:#8f8f8f
+}
+
+.site-footer h3 {
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    margin-top: 5rem;
+    text-align: center;
+    font-weight: 500;
+    border-top: 0.1rem solid #ffffff;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+                                                        /* INDEX HTML */
+/* SECCIÓN INFORMACION */
+.hero {
+    background-image: url(../img/mapa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 40rem;
+    background-size: 80%, 120rem;
+    background-color:#1ca4ed;
+}
+
+.informacion {
+    padding-top: 5rem;
+    text-align: justify;
+}
+
+.informacion h2 {
+    text-align: left;
+    padding-left: 10px;
+    border-left: 6px solid #1a237e;
+    color: #1a237e;
+}
+
+.listado-informacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+    margin-bottom: 5rem;
+}
+
+.beneficios h2 {
+    text-align: right;
+    padding-right: 10px;
+    border-right: 6px solid #1a237e;
+    color: #1a237e;
+}
+
+.listado-beneficios {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.listado-beneficios img {
+    width: 70%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.titulo {
+    color: #1a237e;
+}
+
+/* -------------------------------------------------- */
+/* REQUISITOS Y PROCESO */
+.contenido-principal { /*main*/
+    padding-top: 2rem;
+    text-align: justify;
+}
+
+.listado-requisitos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    row-gap: 2rem;
+}
+/* Requisitos */
+
+.texto-requisitos h3 {
+    margin: 0;
+    border-bottom: 2px solid #1a237e;
+    color: #1a237e;
+}
+
+.texto-requisitos {
+    text-align: center;
+    color: black;
+    padding: 2rem;
+}
+
+.texto-requisitos p {
+    margin: 0 0 0, 5rem 0;
+    font-style: italic;
+}
+
+.texto-requisitos li {
+    text-align: left;
+}
+
+/* Procesos */
+.texto-proceso h3 {
+    margin: 0;
+    border-bottom: 2px solid #1a237e;
+    color: #1a237e;
+}
+
+.texto-proceso {
+    text-align: center;
+    color: black;
+    padding: 2rem;
+}
+
+.texto-proceso p {
+    margin: 0 0 0, 5rem 0;
+    font-style: italic;
+}
+
+.texto-proceso li {
+    text-align: left;
+}
+
+/* -------------------------------------------------- */
+/* MÁS INFORMACION */
+.contenedor-mas-info {
+    border-top: 0.1rem solid #e1e1e1;
+    padding-top: 3rem;
+}
+
+.contenedor-mas-info h2 {
+    text-align: left;
+    padding-left: 10px;
+    border-left: 6px solid #1a237e;
+    color: #1a237e;
+}
+
+.listado-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    row-gap: 2rem;
+}
+
+.info {
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.info:hover {
+    transform: translateY(-4px);
+}
+
+.info img {
+    width: 100%;
+    height: 250px;     /* altura uniforme */
+    object-fit: cover; /* recorta sin deformar */
+    display: block;
+}
+
+.texto-info1 h3 {
+    background-color: #642c63;
+    color: white;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+}
+
+.texto-info2 h3 {
+    background-color: #e05721;
+    color: white;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+}
+
+.texto-info3 h3 {
+    background-color: #1c551a;
+    color: white;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+}
+
+.texto-info1 p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3.2rem;
+}
+
+.texto-info2 p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3.2rem;
+}
+
+.texto-info3 p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btn {
+    background-color: #0387c0;
+    display: block;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1rem;
+    transition: background-color 0.3s ease-out;
+    text-align: center;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #043192;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.max-width-30 {
+    max-width: 30rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+                                                        /* BECAS HTML */
+/* --- CONTENEDOR GENERAL --- */
+.contenido {
+    padding: 2rem 1rem;
+    text-align: justify;
+}
+
+.contenedor-becas {
+    background-color: rgb(232, 232, 232);
+}
+
+.contenido h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    color: #1a237e;
+}
+
+/* TARJETAS (SECTIONS) */
+.contenido section {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform .2s ease, box-shadow .2s ease;
+    border-left: 6px solid #1a237e;
+}
+
+.contenido section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+}
+
+.contenido h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    color: #0d1b66;
+}
+
+.contenido p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+/* --- BOTÓN --- */
+.boton {
+    display: inline-block;
+    padding: 0.8rem 4.6rem;
+    background-color: #1a237e;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: .5rem;
+    transition: background-color .2s ease;
+    margin-top: 2rem;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: #3949ab;
+}
+
+.icono-beca {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.becas h2 {
+    display: flex;
+    align-items: center ;
+    gap: 1rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+                                                        /* MI EXPERIENCIA HTML */
+.experiencia {
+    padding-top: 5rem;
+    text-align: justify;
+}
+
+.mi-experiencia h2 {
+    border-left: 6px solid #1a237e;
+    padding-left: 2rem;
+}
+
+.experiencia-bloque {
+    margin-bottom: 4rem;
+}
+
+.experiencia-bloque h3 {
+    font-size: 2.5rem;
+    border-top: 0.2rem solid #e1e1e1;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.experiencia-bloque h4 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    color: #037bc0;
+}
+
+.flex-formulario {      /* flexbox */
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.texto-formulario {
+    flex: 1;
+}
+
+.imagen-bloque2 img {
+    width: 47rem; 
+    height: auto;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.imagen-bloque3 img {
+    width: 50rem; 
+    height: 40rem;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+                                                    /* HISTORIAS DE ÉXITO HTML */
+/* SECCIÓN GRID */
+.historias-exito {
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, 
+    transparent 50%, 
+    #3e3e3e 20%, #0077cb 100%);
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-position: -20rem center;
+    background-size: 103%, 120rem;
+}
+
+.historias-exito-grid {
+    display: flex;
+    align-items: center;
+}
+
+.texto-grid {
+    flex-basis: 45%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: white
+}
+
+.imagen-grid img {
+    width: 55rem; 
+    height: 55rem;  
+}
+
+/* CONTENIDO HISTORIA */
+.historias {
+    padding-top: 5rem;
+    text-align: justify;
+}
+
+.historia-completa h2 {
+    border-left: 6px solid #1a237e;
+    padding-left: 2rem;
+}
+
+.historia-completa h3 {
+    color: #0d1b66;
+    margin-bottom: 0;
+    padding-top: 3rem;
+}
+
+.impacto-programa {
+    text-align: right;
+}
+
+.seccion-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding-bottom: 5rem;
+}
+
+.imagen-historia1 img {
+    width: 40rem; 
+    height: 45rem; 
+    display: block;
+    margin: 0 auto;
+}
+
+.seccion-3 {
+    padding-bottom: 2rem;
+}
+
+.imagen-historia2 img {
+    width: 70rem; 
+    height: 50rem; 
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.seccion-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding-bottom: 1rem;
+}
+
+.imagen-historia3 img {
+    width: 70rem; 
+    height: 40rem; 
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+                                                        /* SOPORTE HTML */
+.contenedor-soporte {
+    padding: 2rem 1rem;
+}
+
+.faq {
+    padding-top: 5rem;
+}
+
+.faq h2 {
+    margin-bottom: 0;
+}
+
+.tips {
+    padding-top: 5rem;
+}
+
+.tips h2 {
+    margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+                                                        /* TABLET FIRST */
+@media(max-width: 992px){
+
+    /* NAVEGACIÓN */
+    .navegacion-principal{
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    /* BODY */
+    .contenido-principal{
+        padding: 3rem;
+    }
+
+    .contenido{
+        padding: 3rem;
+    }
+
+    .experiencia{
+        padding: 3rem;
+    }
+
+    .historias{
+        padding: 3rem;
+    }
+
+    .soporte{
+        padding: 3rem;
+    }
+
+    .hero{
+        height: 25rem;
+    }
+
+    .listado-beneficios{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listado-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .flex-formulario{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historias-exito{
+        padding: 5rem;
+        background: #004f87 100%;
+    }
+    
+    .historias-exito-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-grid{
+        flex-basis: 100%;
+        padding-left: 2rem;
+        text-align: center;
+    }
+
+    .seccion-1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-4{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* FOOTER */
+    .grid-footer{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+    }
+
+    .copyright{
+        padding: 3rem;
+    }
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+                                                        /* MOBILE FIRST */
+
+@media(max-width: 600px){
+
+    /* NAVEGACIÓN */
+    .navegacion-principal{
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    /* BODY */
+    .contenido-principal{
+        padding: 3rem;
+    }
+
+    .contenido{
+        padding: 3rem;
+    }
+
+    .experiencia{
+        padding: 3rem;
+    }
+
+    .historias{
+        padding: 3rem;
+    }
+
+    .soporte{
+        padding: 3rem;
+    }
+
+    .hero{
+        height: 25rem;
+    }
+
+    .listado-beneficios{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listado-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .flex-formulario{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historias-exito{
+        padding: 5rem;
+        background: #004f87 100%;
+    }
+    
+    .historias-exito-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-grid{
+        flex-basis: 100%;
+        padding-left: 2rem;
+        text-align: center;
+    }
+    
+    .seccion-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* FOOTER */
+    .grid-footer{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+    }
+
+    .copyright{
+        padding: 3rem;
+    }
+}
+
